@@ -41,8 +41,8 @@ body {
 .pomodoro-container {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center horizontally */
-    justify-content: center; /* Center vertically */
+    align-items: center; 
+    justify-content: center; 
     
 }
 
@@ -50,7 +50,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 2rem; /* Adds spacing between buttons and timer */
+    margin-bottom: 2rem; 
 }
 
 .timer-btn {
@@ -124,7 +124,7 @@ body {
 }
 
 .timer {
-    border: 3px solid rgba(255, 2, 2, 0.425); /* Initial box shadow */
+    border: 3px solid rgba(255, 2, 2, 0.425); 
     border-radius: 50%;
     padding: 30px;
     width: 200px;
@@ -132,7 +132,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0px 0px 30px 10px rgba(255, 2, 2, 0.425); /* Initial shadow */
+    box-shadow: 0px 0px 30px 10px rgba(255, 2, 2, 0.425); 
 }
 
 .final-buttons {
@@ -148,7 +148,7 @@ body {
     padding: 10px 200px;
     cursor: pointer;
     width: 30%;
-    margin-top: 50px; /* Spacing between timer and start button */
+    margin-top: 50px; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -167,7 +167,7 @@ body {
     padding: 10px 200px;
     cursor: pointer;
     width: 30%;
-    margin-top: 50px; /* Spacing between timer and start button */
+    margin-top: 50px; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -213,7 +213,6 @@ body {
         position: static;
         
     }
-    /* Center the header and reduce the margins */
     .header h1 {
         text-align: center;
         display: flex;
@@ -221,7 +220,6 @@ body {
         margin-bottom: 70px;
     }
 
-    /* Reduce font size of the mode title */
     .mode-name {
         font-size: 2rem;
         margin-bottom: 1.5rem;
@@ -234,12 +232,10 @@ body {
         box-shadow: 0px 0px 20px 5px rgba(255, 2, 2, 0.425); /* Ensure box-shadow scales down */
     }
 
-    /* Reduce timer font size */
     #time {
         font-size: 2.5rem;
     }
 
-    /* Stack the mode buttons vertically */
     .button-container {
         flex-direction: column;
         gap: 15px;
@@ -247,19 +243,18 @@ body {
     }
 
     .timer-btn {
-        font-size: 1.2rem; /* Smaller button text */
-        padding: 8px 15px; /* Adjust padding */
+        font-size: 1.2rem; 
+        padding: 8px 15px; 
         width: 9rem;
     }
 
-    /* Reduce size of start/reset buttons and stack them */
     .final-buttons {
         gap: 10px;
     }
 
     .start-btn, .reset-btn {
-        padding: 10px 80px; /* Smaller padding for buttons */
-        font-size: 2rem; /* Reduce button text size */
+        padding: 10px 80px; 
+        font-size: 2rem; 
     }
 }
 
