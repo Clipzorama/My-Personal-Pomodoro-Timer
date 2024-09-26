@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Chrision's Pomodoro Timer</title>
+    <script src="index.js" defer></script> <!-- after the DOM is done being parsed -->
+</head>
+<body>
+    <header class="header">
+        <h1>Chrision's Pomodoro Timer</h1>
+    </header>
+    
+    <div class="pomodoro-container">
+        <span class="mode-name">Pomodoro! &#x1F992;</span>
+        <div class="button-container">
+            <button id="pomodoro-btn" class="timer-btn active">Pomodoro</button>
+            <button id="sb-btn" class="timer-btn active">Short Break</button>
+            <button id="lb-btn" class="timer-btn active">Long Break</button>
+        </div>
+
+        <div class="timer" id="timer">
+            <span id="time">25:00</span>
+        </div>
+        <div class="final-buttons">
+        <button id="start-btn" class="start-btn">Start</button>
+        <button id="reset-btn" class="reset-btn">Reset</button>
+        </div>
+    </div>
+    
+</body>
+</html>

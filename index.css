@@ -1,0 +1,266 @@
+/* Using the Lato font for this design */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900&display=swap');
+
+body {
+    background-color: #121212 ;
+    font-family: 'Lato', sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(18, 18, 18, 0.5); /* Transparent background */
+    padding: 10px 40px;
+    border-bottom: 1px solid white;
+    width: 100%;
+    z-index: 20; 
+}
+
+.header h1 {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    text-align: left;
+    color: white;
+}
+
+.mode-name {
+    color: white;
+    font-weight: 900;
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+.pomodoro-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem; /* Adds spacing between buttons and timer */
+}
+
+.timer-btn {
+    background: transparent;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1.5rem;
+}
+
+@keyframes activator {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.timer-btn.active {
+    animation: activator 2s infinite; 
+}
+
+
+/* we will use this for the timer when the clock starts going down */
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0px 0px 20px 5px rgba(255, 2, 2, 0.425);
+    }
+    50% {
+        box-shadow: 0px 0px 30px 10px rgba(255, 2, 2, 0.425);
+    }
+    100% {
+        box-shadow: 0px 0px 20px 5px rgba(255, 2, 2, 0.425);
+    }
+}
+
+#pomodoro-btn {
+    border: 2px solid rgba(255, 2, 2, 0.425);
+    color: rgba(255, 2, 2, 0.425);
+}
+
+#pomodoro-btn:hover {
+    background-color: rgba(255, 2, 2, 0.425);
+    color: white;
+}
+
+#sb-btn {
+    border: 2px solid rgba(18, 123, 28, 0.76);
+    color: rgba(18, 123, 28, 0.76);
+}
+
+#sb-btn:hover {
+    background-color: rgba(18, 123, 28, 0.76);
+    color: white;
+}
+
+#lb-btn {
+    border: 2px solid rgba(56, 56, 189, 0.76);
+    color: rgba(56, 56, 189, 0.76);
+}
+
+#lb-btn:hover {
+    background-color: rgba(56, 56, 189, 0.76);
+    color: white;
+}
+
+.timer {
+    border: 3px solid rgba(255, 2, 2, 0.425); /* Initial box shadow */
+    border-radius: 50%;
+    padding: 30px;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 30px 10px rgba(255, 2, 2, 0.425); /* Initial shadow */
+}
+
+.final-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.start-btn {
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 10px 200px;
+    cursor: pointer;
+    width: 30%;
+    margin-top: 50px; /* Spacing between timer and start button */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    font-size: 3rem;
+}
+
+.start-btn:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.reset-btn {
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 10px 200px;
+    cursor: pointer;
+    width: 30%;
+    margin-top: 50px; /* Spacing between timer and start button */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    font-size: 3rem;
+}
+
+.reset-btn:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+#time {
+    color: white;
+    font-size: 4rem;
+    font-weight: 800;
+    letter-spacing: 0.2rem;
+}
+
+.pomodoro-mode {
+    border-color: rgba(255, 2, 2, 0.425);
+    box-shadow: 0px 0px 30px 10px rgba(255, 2, 2, 0.425);
+  }
+  
+  .short-break-mode {
+    border-color: rgba(18, 123, 28, 0.76);
+    box-shadow: 0px 0px 30px 10px rgba(18, 123, 28, 0.76);
+  }
+  
+  .long-break-mode {
+    border-color: rgba(56, 56, 189, 0.76);
+    box-shadow: 0px 0px 30px 10px rgba(56, 56, 189, 0.76);
+  }
+
+
+  @media only screen and (max-width: 600px) {
+
+    .header {
+        border: none;
+        padding: 0px;
+        display: flex;
+        justify-content: center;
+        position: static;
+        
+    }
+    /* Center the header and reduce the margins */
+    .header h1 {
+        text-align: center;
+        display: flex;
+        margin-top: -20px;
+        margin-bottom: 70px;
+    }
+
+    /* Reduce font size of the mode title */
+    .mode-name {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .timer {
+        width: 150px;
+        height: 150px;
+        padding: 20px;
+        box-shadow: 0px 0px 20px 5px rgba(255, 2, 2, 0.425); /* Ensure box-shadow scales down */
+    }
+
+    /* Reduce timer font size */
+    #time {
+        font-size: 2.5rem;
+    }
+
+    /* Stack the mode buttons vertically */
+    .button-container {
+        flex-direction: column;
+        gap: 15px;
+        margin-bottom: 1.5rem;
+    }
+
+    .timer-btn {
+        font-size: 1.2rem; /* Smaller button text */
+        padding: 8px 15px; /* Adjust padding */
+        width: 9rem;
+    }
+
+    /* Reduce size of start/reset buttons and stack them */
+    .final-buttons {
+        gap: 10px;
+    }
+
+    .start-btn, .reset-btn {
+        padding: 10px 80px; /* Smaller padding for buttons */
+        font-size: 2rem; /* Reduce button text size */
+    }
+}
+
+
