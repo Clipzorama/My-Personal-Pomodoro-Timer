@@ -32,7 +32,7 @@ function switchMode(mode) {
     timeLeft = times[mode];
     updateDisplay();
     
-    // Reset the timer shadow color based on mode
+    // Resetting the styles of the timerDiv depending on the mode!
     if (mode === 'pomodoro') {
         timerDiv.style.boxShadow = '0px 0px 30px 10px rgba(255, 2, 2, 0.425)';
        timerDiv.style.border = '3px solid rgba(255, 2, 2, 0.425)'         
@@ -51,7 +51,7 @@ function switchMode(mode) {
     startBtn.textContent = 'Start';
 }
 
-// Start or pause the timer
+// function for starting and pausing the timer
 function toggleTimer() {
     if (isRunning) {
         clearInterval(timer);
@@ -73,7 +73,7 @@ function toggleTimer() {
     }
 }
 
-// Reset the timer to the initial time of the current mode
+// depending on the mode, the button will reset the timer
 function resetTimer() {
     clearInterval(timer);
     timeLeft = times[currentMode];
@@ -82,14 +82,14 @@ function resetTimer() {
     isRunning = false;
 }
 
-// Add event listeners to mode buttons
+// For the mode buttons
 pomodoroBtn.addEventListener('click', () => switchMode('pomodoro'));
 shortBreakBtn.addEventListener('click', () => switchMode('shortBreak'));
 longBreakBtn.addEventListener('click', () => switchMode('longBreak'));
 
-// Add event listeners to start and reset buttons
+// implementing the event listeners for both start and reset button
 startBtn.addEventListener('click', toggleTimer);
 resetBtn.addEventListener('click', resetTimer);
 
-// Initialize display
+// Initializing the original display
 updateDisplay();
