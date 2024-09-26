@@ -1,13 +1,35 @@
-# My-Personal-Pomodoro-Timer
-This Pomodoro Timer was inspired by my own study routine, as I frequently use the Pomodoro technique to stay focused. Built with HTML, CSS, and JavaScript, this timer helps manage work and break intervals effectively. A personal project designed to enhance productivity during study sessions.
+# ⏳ My-Personal-Pomodoro-Timer ⏳
 
+A simple yet effective Pomodoro timer built to supercharge productivity during focused work sessions. Inspired by my own study habits, this timer helps track Pomodoro intervals with custom work, short break, and long break cycles. Whether you're coding, reading, or studying, this timer's gonna help you stay productive as long as you hold yourself accountable.
 
-### Screenshot
+---
 
+### 🚀 **Features**
+- Customizable work and break modes.
+- Sleek and responsive design for any device.
+- Simple controls: Start, Pause, Reset.
+- Visual timers to keep track of time effortlessly.
+
+---
+
+### 🎨 **Preview**
 ![Desktop View](./design/desk_des.jpg)
-![Mobile View](./design/mobile_des.jpg)
 
+---
 
-### Links
+### 🌐 **Live Demo**
+Check it out in action [here](https://clipzorama.github.io/My-Personal-Pomodoro-Timer/)!
 
-- Live Site URL: [My Personal Timer](https://clipzorama.github.io/My-Personal-Pomodoro-Timer/)
+---
+
+### 📂 **Tech Stack**
+- **HTML5**
+- **CSS3**
+- **JavaScript (ES6+)**
+
+---
+
+### 📋 **How to Use**
+1. **Start** the timer for a 25-minute work session.
+2. **Take a break**: 5-minute short break or 15-minute long break.
+3. Rinse and repeat for optimal productivity!
