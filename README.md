@@ -13,7 +13,7 @@ A simple yet effective Pomodoro timer built to supercharge productivity during f
 ---
 
 ### 🎨 **Preview**
-![Desktop View](./design/desk_des.jpg)
+![Desktop View](./design/desk_des.JPG)
 
 ---
 
