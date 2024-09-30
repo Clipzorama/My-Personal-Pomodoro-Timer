@@ -35,13 +35,22 @@ function switchMode(mode) {
     // Resetting the styles of the timerDiv depending on the mode!
     if (mode === 'pomodoro') {
         timerDiv.style.boxShadow = '0px 0px 30px 10px rgba(255, 2, 2, 0.425)';
-       timerDiv.style.border = '3px solid rgba(255, 2, 2, 0.425)'         
+        timerDiv.style.border = '3px solid rgba(255, 2, 2, 0.425)';
+        shortBreakBtn.classList.remove("active");
+        longBreakBtn.classList.remove("active");
+
     } else if (mode === 'shortBreak') {
         timerDiv.style.boxShadow = '0px 0px 30px 10px rgba(18, 123, 28, 0.76)';
-        timerDiv.style.border = '3px solid rgba(18, 123, 28, 0.76)'    
+        timerDiv.style.border = '3px solid rgba(18, 123, 28, 0.76)';
+        shortBreakBtn.classList.add("active");
+        pomodoroBtn.classList.remove("active");
+        longBreakBtn.classList.remove("active");
     } else if (mode === 'longBreak') {
         timerDiv.style.boxShadow = '0px 0px 30px 10px rgba(56, 56, 189, 0.76)';
-        timerDiv.style.border = '3px solid rgba(56, 56, 189, 0.76)'
+        timerDiv.style.border = '3px solid rgba(56, 56, 189, 0.76)';
+        longBreakBtn.classList.add("active");
+        pomodoroBtn.classList.remove("active");
+        shortBreakBtn.classList.remove("active");
     }
     
     
