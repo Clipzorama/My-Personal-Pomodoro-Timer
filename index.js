@@ -36,6 +36,7 @@ function switchMode(mode) {
     if (mode === 'pomodoro') {
         timerDiv.style.boxShadow = '0px 0px 30px 10px rgba(255, 2, 2, 0.425)';
         timerDiv.style.border = '3px solid rgba(255, 2, 2, 0.425)';
+        pomodoroBtn.classList.add("active");
         shortBreakBtn.classList.remove("active");
         longBreakBtn.classList.remove("active");
 
