@@ -74,7 +74,7 @@ body {
     }
 }
 
-.timer-btn.active {
+.active {
     animation: activator 2s infinite; 
 }
 
